@@ -36,12 +36,18 @@ class Helper {
     }
 
     swap = async (index1, index2) => {
+        let width = screen.width;
+        let x = 3.8;
+        if(width < 600)
+        {
+            x=1;
+        }
         await this.pause();
         let value1 = this.list[index1].getAttribute("value");
         let value2 = this.list[index2].getAttribute("value");
         this.list[index1].setAttribute("value", value2);
-        this.list[index1].style.height = `${3.8*value2}px`;
+        this.list[index1].style.height = `${x*value2}px`;
         this.list[index2].setAttribute("value", value1);
-        this.list[index2].style.height = `${3.8*value1}px`;
+        this.list[index2].style.height = `${x*value1}px`;
     }
 };

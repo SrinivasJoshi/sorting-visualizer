@@ -112,11 +112,17 @@ class sortAlgorithms {
         for(let c = start ; c <= end ; ++c) {
             this.list[c].setAttribute("class", "cell current");
         }
+        let width = screen.width;
+        let x = 4;
+        if(width < 600)
+        {
+            x=1.7;
+        }
         for(let c = start, point = 0 ; c <= end && point < newList.length; 
             ++c, ++point) {
                 await this.help.pause();
                 this.list[c].setAttribute("value", newList[point]);
-                this.list[c].style.height = `${3.5*newList[point]}px`;
+                this.list[c].style.height = `${x*newList[point]}px`;
         }
         for(let c = start ; c <= end ; ++c) {
             this.list[c].setAttribute("class", "cell");

@@ -27,8 +27,7 @@ body {
 /* Title CSS */
 .title {
   /* background-color: var(--primary-color); */
-  background-color: #ff4e00;
-background-image: linear-gradient( #ff4e00 0%, #ec9f05 74%);
+  background-color: var(--primary-color);
   text-align: center;
   font-size: 1.2em;
   padding-block: 0.5em;
@@ -185,8 +184,8 @@ background-image: linear-gradient( #ff4e00 0%, #ec9f05 74%);
 }
 @media screen and (max-width: 550px) {
   .center {
-    width: 20rem;
-    height: 15rem;
+    width: 21rem;
+    height: 17rem;
   }
   
 }

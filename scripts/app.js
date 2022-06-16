@@ -30,7 +30,7 @@ const RenderList = async () => {
   let x = 3.8;
   if(width < 600)
   {
-    x=2;
+    x=1.7;
   }
   await clearScreen();
 
