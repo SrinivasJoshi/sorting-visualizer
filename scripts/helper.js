@@ -37,7 +37,7 @@ class Helper {
 
     swap = async (index1, index2) => {
         let width = screen.width;
-        let x = 3.8;
+        let x = 1.4;
         if(width < 600)
         {
             x=1;

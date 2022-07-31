@@ -83,7 +83,7 @@ body {
 .center {
   margin:0 auto;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /* Added shadow to make page border free */
-  height: 25rem;
+  height: 27rem;
   width: 45rem;
   max-height: 731px;
   margin-top: 5rem;
